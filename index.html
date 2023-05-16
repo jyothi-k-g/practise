@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: white;
+            height: auto;
+            padding: 5px;
+        }
+        header ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        header ul li{
+            font-size: 1.2em;
+            padding: 20px;
+            display: inline-block;
+            color: black;
+        }
+        header button{
+            float: right;
+        }
+        .services{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+       .services .box1{
+            text-align: center;
+            color: blue;
+       }
+       .services .box2 h3{
+            font-size: 30px;
+            width: 40%;
+            margin: 5px auto;
+            padding: 30px 0px;
+            text-align: center;
+       }
+       .services .container1{
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-columns: 27% 27% 27%; 
+            grid-gap: 5px;
+            padding: 50px;
+        
+       }
+       .services .container1 .box3, .box4, .box5{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            border: 1px solid #cccc;
+            height: auto;
+       }
+        .services .container1 i,h4 {
+            font-size: 27px;
+            color:#404040;
+            text-align: center;
+            float: center;
+            margin: 5px auto;
+        }
+        .services .container1 p{
+            font-size:17px;
+            text-align: center;
+            color: #666666;
+            margin: 10px auto;
+        }
+        .container2{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+           grid-template-rows: auto;
+           
+        }
+        .container2 .image1{
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .container2 img{
+            border-radius: 20px;
+            min-width: 90%;
+            max-height: 90%;
+        }
+
+        
+        
+        .container2 .content1{
+            /* max-width: inherit; */
+            margin: 10px;
+            height: auto;
+            word-spacing: 5px;
+            line-height: 2.0;
+            background-color: #fff;
+            padding: 40px;
+        }
+        .container2 .content1 h1{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .container2 .content1 p{
+            font-size: 18px;
+            text-align: start;
+            text-align: justify;
+        }
+      .container3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        padding: 40px;
+      }
+      .container3 .contactform{
+        background-color: #d9d9d9;
+        margin: 30px;
+        width: 80%;
+        border-radius: 10px;
+        padding: 30px;
+      }
+      .container3 form{
+        padding: 40px;
+      }
+      .container3 form label{
+        margin: 20px;
+        font-size: 20px;
+      }
+      .container3 form input{
+        margin: 20px;
+        width: 90%;
+        padding: 5px;
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+      }
+      .container3 .formcontent{
+        margin:30px;
+        padding: 30px;
+        line-height: 7vh;
+      }
+      .gallary{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+     
+      .gallary .img-f{
+        object-fit: cover;
+        margin: 30px;
+        min-width: 15vh;
+        min-height: 40vh;
+      }
+        @media only screen and (max-width:768px){
+            .services{
+                width: 120%;
+            }
+            .services .box2 h3{
+                width: 100%;
+                font-size: 30px;
+            }
+            .services .container1{
+                display: block;
+            }
+            .services .container1 .box3, .box4, .box5{
+                width: 80%;
+                margin: 20px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container2{
+                display: flex;
+                flex-direction: column;
+                width: 120%;
+                height: auto;
+            }
+            .container2 .image1 {
+                padding: 20px;
+                width: 90%;
+               height: auto;
+            }
+            .container2 img{
+                max-width: 70%;
+                min-height: 60%;
+                border-radius: 20px;
+            }
+            .container2 .content1{
+                width: inherit;
+                height: min-content;
+                padding: 40px;
+                width: 80%;
+            }
+            .container3{
+                width: 100%;
+                display: block;
+
+            }
+            .container3 .contactform{
+                margin: 0;
+            }
+            .container3 .formcontent{
+               margin: 0px;
+               padding: 50px 10px;
+            }
+            .container3 form{
+                padding: 20px;
+            }
+            .gallary{
+                width: 120%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .gallary .img-f{
+                margin: 30px;
+                padding: 40px;
+                max-width: 60%;
+                min-height: 60vh;
+            }
+            .gallary img{
+                
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+       
+    </header>
+    <div class="services">
+        <div class="box1">Services</div>
+        <div class="box2">
+            <h3>With more than 20 years of experience we can deliver the best product design.</h3>
+        </div>
+        <div class="container1">
+            <div class="box3">
+                <i class="fa fa-cloud"></i>
+                <h4>Graphic design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum  </p>
+            </div>
+            <div class="box4">
+                <i class="fa fa-cloud"></i>
+                <h4>Graphic design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum  </p>
+            </div>
+            <div class="box5">
+                <i class="fa fa-cloud"></i>
+                <h4>Graphic design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum </p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="image1">
+            <img src="com.jpg" >
+        </div>
+        <div class="content1">
+            <h3>about us</h3>
+            <h1>heading 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia delectus ab blanditiis dolor 
+                quia pariatur dignissimos illo eos libero, quasi nulla nesciunt natus nisi obcaecati
+                 porro quos excepturi quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 Voluptatem at sequi voluptates nihil quaerat ullam eligendi temporibus voluptas 
+                 quisquam! Asperiores accusamus 
+                 vero debitis pariatur porro, minima ab. Rerum, harum labore?</p>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="contactform">
+            <h1>Contact Us</h1>
+            <form>
+                <label> name</label></br>
+                <input type="text" placeholder="enetr the name"></br>
+                <label> name</label></br>
+                <input type="text" placeholder="enetr the name"></br>
+                <label> name</label></br>
+                <input type="text" placeholder="enetr the name"></br>
+                <label> name</label></br>
+                <input type="text" placeholder="enetr the name"></br>
+                <input type="submit" value="submot">
+            </form>
+        </div>
+        <div class="formcontent">
+            <h1>heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat, 
+                quam repudiandae praesentium quaerat quibusdam odio tenetur error fugiat 
+                voluptatibus dolorum eveniet at? Ipsum, consequatur officia. Sequi ab quod facere!</p>
+        </div>
+    </div>
+    <div class="gallary">
+        <img src="img.png" class="img-f">
+        <img src="img.png" class="img-f">
+        <img src="img.png" class="img-f">
+        <img src="img.png" class="img-f">
+    </div>
+</body>
+</html>
